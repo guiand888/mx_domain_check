@@ -1,8 +1,6 @@
 ✉️ MX Domain Check
 ===
 
-## Overview
-
 **`mx_domain_check`** is a Python script that reads email addresses from a CSV file, extracts the domain part of each email address, checks the domain's MX (Mail Exchange) records, and identifies if any of them are associated with Google. It then records those domains in a new CSV file named `results.csv`.
 
 ### Why?
