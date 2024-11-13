@@ -5,10 +5,10 @@
 
 **`mx_domain_check`** is a Python script that reads email addresses from a CSV file, extracts the domain part of each email address, checks the domain's MX (Mail Exchange) records, and identifies if any of them are associated with Google. It then records those domains in a new CSV file named `results.csv`.
 
-## Why?
-You use case is yours. Mine is that I do a lot of email marketing outreach and some of the services we offer do not apply to Google Workspace customers.
+### Why?
+Your use case is yours. Mine is that I do a lot of email marketing outreach and some of the services we offer do not apply to Google Workspace customers.
 
-## Features
+### Features
 
 - Reads a list of entries (email addresses or domains) from a specified CSV file.
 - Extracts the domain from each entry if necessary.
@@ -17,12 +17,13 @@ You use case is yours. Mine is that I do a lot of email marketing outreach and s
 - Outputs the matched domains to a specified CSV file.
 - `-p`: otionally shows a progress indicator updated every 1 second.
 
-## Requirements
+## Usage
+### Requirements
 
 - Python 3.x
 - `dig` command-line tool (part of the `dnsutils` package on most Unix-like systems)
 
-## Installation
+### Installation
 
 **1. Clone the repository (if applicable):**
 ```sh
@@ -41,7 +42,7 @@ On Debian-based systems (e.g., Ubuntu):
 sudo apt-get install dnsutils
 ```
 
-## Usage
+### Run the code
 
 **1. Prepare your input file (emails_and_domains.csv) containing email addresses and/or domains, one per line:**
 
@@ -62,7 +63,7 @@ python ./mx_domain_check.py -i test_emails_and_domains.csv -o results.csv -p
 The script will generate a results.csv file containing the domains whose MX records end with google.com.
 
 
-## Example
+### Example
 
 Given an `emails.csv` file with the following content:
 ```csv
