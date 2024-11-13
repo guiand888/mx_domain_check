@@ -1,4 +1,4 @@
-MX Domain Check
+MX Domain Check ✉️
 ===
 
 ## Overview
